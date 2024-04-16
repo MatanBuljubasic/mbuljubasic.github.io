@@ -88,14 +88,13 @@ header button {
 }
 
 .page2 .box img {
-    max-width: 15%;
+    width: 26px;
     box-shadow: 0px 0px 16px 0px #0000001A;
     background-color: #FFFFFF;
     border-radius: 10.67px;
 }
 
 .page3 img {
-    max-width: 50%;
     padding: 2%;
 }
 
@@ -116,6 +115,11 @@ header button {
     background: #F5FCFF;
     border-bottom: 4px solid #5E3BEE;
     border-radius: 10.67px;
+}
+
+.page4 img {
+    width: fit-content;
+    align-self: center;
 }
 
 .page4 p,
@@ -188,4 +192,34 @@ button {
     color: #FFFFFF;
     background-color: #5E3BEE;
     padding: 1%;
+}
+
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page2 .box,
+    .page4 .box,
+    .page5 .box {
+        width: fit-content;
+        margin-bottom: 15px;
+    }
+    .box {
+        width: fit-content;
+    }
+
+    .container {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .container .links {
+        flex-direction: column;
+        width: fit-content;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
 }

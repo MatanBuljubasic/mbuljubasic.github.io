@@ -12,12 +12,12 @@
 <body>
     <nav>
         <div class="container">
-            <img src="images\Navbar_\Logo.png" alt="" loading="lazy">
+            <img width="105" height="23" src="images\Navbar_\Logo.png" alt="" loading="lazy">
             <div class="links">
-                <p>Home</p>
-                <p>Portfolio</p>
-                <p>About me</p>
-                <p>Testimonials</p>
+                <p><a href="#">Home</a></p>
+                <p><a href="#portfolio">Portfolio</a></p>
+                <p><a href="#aboutme">About Me</a></p>
+                <p><a href="#testimonials">Testimonials</a></p>
             </div>
             <button type="">Contact me</button>
         </div>
@@ -32,7 +32,7 @@
                     tristique.</p>
                 <button type="">Get in touch</button>
             </div>
-            <img src="images\page1.png" alt="" style="max-width: 50%;" loading="lazy">
+            <img src="images\page1.png" srcset="images\page1_50.png 710w, images\page1.png 350w" sizes="(max-width: 1000px) 350px, 710px" alt="" loading="lazy">
         </div>
     </header>
     <div class="page2">
@@ -73,9 +73,9 @@
             </div>
         </div>
     </div>
-    <div class="page3">
+    <div id="aboutme" class="page3">
         <div class="row">
-            <img src="images\About Me.png" alt="" loading="lazy">
+            <img src="images\About Me.png" srcset="images\About_Me.png 710w, images\About_Me-1.png 298w" sizes="(max-width: 1000px) 350px, 710px" alt="" loading="lazy">
             <div class="column" style="justify-content: center;">
                 <p>About</p>
                 <h1>About Me</h1>
@@ -89,7 +89,7 @@
             </div>
         </div>
     </div>
-    <div class="page4">
+    <div id="portfolio" class="page4">
         <div class="column">
             <div class="row">
                 <div class="column">
@@ -100,19 +100,19 @@
             </div>
             <div class="row">
                 <div class="box">
-                    <img src="images\Placeholder_\Image.png" alt="" loading="lazy">
+                    <img src="images\Placeholder_\Image.png" srcset="images\Placeholder_\Image.png 450w, images\Placeholder_\Image2.png 337w" sizes="(max-width: 1000px) 337px, 270px" alt="" loading="lazy">
                     <h2>Ahuse</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     <p class="underline">View in Dribbble</p>
                 </div>
                 <div class="box">
-                    <img src="images\Placeholder_\Image-1.png" alt="" loading="lazy">
+                    <img src="images\Placeholder_\Image-1.png" srcset="images\Placeholder_\Image-1.png 450w, images\Placeholder_\Image-12.png 337w" sizes="(max-width: 1000px) 337px, 270px" alt="" loading="lazy">
                     <h2>App Dashboard</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     <p class="underline">View in Dribbble</p>
                 </div>
                 <div class="box">
-                    <img src="images\Placeholder_\Image.png" alt="" loading="lazy">
+                    <img src="images\Placeholder_\Image-2.png" srcset="images\Placeholder_\Image-2.png 450w, images\Placeholder_\Image-22.png 337w" sizes="(max-width: 1000px) 337px, 270px" alt="" loading="lazy">
                     <h2>Easy Rent</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
                     <p class="underline">View in Dribbble</p>
@@ -120,7 +120,7 @@
             </div>
         </div>
     </div>
-    <div class="page5">
+    <div id="testimonials" class="page5">
         <div class="column">
             <p>Clients Feedback</p>
             <h1>Customer testimonials</h1>
@@ -224,25 +224,6 @@
             </div>
         </form>
     </div>
-    <footer>
-        <div class="column">
-            <div class="container">
-                <img src="images\Navbar_\Logo.png" alt="" loading="lazy">
-                <div class="links">
-                    <p>Home</p>
-                    <p>Portfolio</p>
-                    <p>About me</p>
-                    <p>Contact</p>
-                    <p>Testimonials</p>
-                    <p>Portfolio</p>
-                </div>
-                <div class="icons">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <hr>
-        </div>
-    </footer>
 </body>
 
 </html>
