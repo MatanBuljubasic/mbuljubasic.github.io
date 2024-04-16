@@ -68,7 +68,8 @@ header button {
 .page3,
 .page4,
 .page5,
-.page6 {
+.page6,
+footer {
     padding: 5%;
 }
 
@@ -100,7 +101,7 @@ header button {
 
 .page4 button {
     background: #E62872;
-    color: #FFFFFF;
+    color: #000000;
     border-radius: 5.33px;
     width: fit-content;
     padding: 1%;
@@ -131,23 +132,18 @@ header button {
 
 .underline {
     width: fit-content;
-    border-bottom: 1px solid #5E3BEE ;
+    border-bottom: 1px solid #5E3BEE;
 }
 
 .page5 {
     background: #F5FCFF;
 }
 
-.stars{
+.stars {
     max-width: 20%;
 }
 
-.avatar {
-    width: 20%;
-    height: 5rem;
-}
-
-.box .column{
+.box .column {
     padding: 4%;
 }
 
@@ -161,12 +157,16 @@ header button {
     border-radius: 10.67px;
 }
 
-.page5 .box .row{
+.page5 .box .row {
     justify-content: left;
 }
 
+.avatar {
+    align-self: center;
+}
+
 .page6 .column {
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -180,6 +180,7 @@ select,
 textarea {
     border: 1.33px solid #5E3BEE;
     border-radius: 5px;
+    background-color: #FFFFFF;
 }
 
 .page6 .row {
@@ -194,6 +195,30 @@ button {
     padding: 1%;
 }
 
+footer .links {
+    display: flex;
+    flex-direction: row;
+    width: 29%;
+    justify-content: space-between;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    justify-content: space-between;
+}
+
+
+hr {
+    border: 0;
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: #282938;
+    height: 1px;
+}
+
 @media screen and (max-width: 1000px) {
     .row {
         flex-direction: column;
@@ -206,6 +231,7 @@ button {
         width: fit-content;
         margin-bottom: 15px;
     }
+
     .box {
         width: fit-content;
     }
@@ -215,11 +241,17 @@ button {
         height: fit-content;
     }
 
-    .container .links {
+    .container .links,
+    footer .links {
         flex-direction: column;
         width: fit-content;
         justify-content: space-between;
         align-items: center;
     }
-    
+
+    footer .social {
+        align-items: center;
+        justify-content: center;
+    }
+
 }
